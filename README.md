@@ -1,5 +1,5 @@
 # StoryBook
-## FastAPI Story Generator
+FastAPI Story Generator
 
 This project is a FastAPI application that allows you to create characters and generate stories based on these characters using the OpenAI API.
 
