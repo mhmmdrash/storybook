@@ -36,13 +36,12 @@ This project is a FastAPI application that allows you to create characters and g
     pip install -r requirements.txt
     ```
 
-4. **Set up your OpenAI API key:**
+4. **Set up your OpenAI API key and Supabase credentials:**
 
-    Replace `"your-openai-api-key"` with your actual OpenAI API key in the `main.py` file:
-
-    ```python
-    openai.api_key = "your-openai-api-key"
-    ```
+    rename .env.example to .env
+    Replace `"your-openai-key"` with your actual OpenAI API key in the `.env` file:
+    Replace `"your-openai-supabase-key"` with your actual Supabase key in the `.env` file:
+    Replace `"your-openai-supabase-url"` with your actual Supabase URL in the `.env` file:
 
 ## Usage
 
