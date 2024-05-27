@@ -42,7 +42,7 @@ This project is a FastAPI application that allows you to create characters and g
     Rename .env.example to .env\
     Replace `"your-openai-key"` with your actual OpenAI API key\
     Replace `"your-supabase-key"` with your actual Supabase key\
-    Replace `"your-openai-supabase-url"` with your actual Supabase URL
+    Replace `"your-supabase-url"` with your actual Supabase URL
 
 ## Usage
 
