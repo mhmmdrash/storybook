@@ -38,10 +38,10 @@ This project is a FastAPI application that allows you to create characters and g
 
 4. **Set up your OpenAI API key and Supabase credentials:**
 
-    rename .env.example to .env
-    Replace `"your-openai-key"` with your actual OpenAI API key in the `.env` file:
-    Replace `"your-openai-supabase-key"` with your actual Supabase key in the `.env` file:
-    Replace `"your-openai-supabase-url"` with your actual Supabase URL in the `.env` file:
+    Rename .env.example to .env\
+    Replace `"your-openai-key"` with your actual OpenAI API key\
+    Replace `"your-supabase-key"` with your actual Supabase key\
+    Replace `"your-openai-supabase-url"` with your actual Supabase URL
 
 ## Usage
 
