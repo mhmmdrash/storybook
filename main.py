@@ -47,6 +47,7 @@ async def generate_story(character_id: Optional[int] = None):
     character_name = response.data[0].get('name')
     details = response.data[0].get('details')
 
+    
     prompt = f""" Create a short story for a character name this is given below, using the details
     of the character also given below. An example is supplied, 
 
@@ -65,10 +66,12 @@ async def generate_story(character_id: Optional[int] = None):
     Character name: {character_name}
     Details: {details}
     """
-    openai_response = openai_client.Completion.create(
-        model="gpt-3.5-turbo-instruct",  # Use the appropriate model
-        prompt=prompt,
-        # max_tokens=200
+
+    openai_response = openai_client.chat.completions.create(
+        model="gpt-3.5-turbo",
+        messages=[
+            {"role": "user", "content": prompt},
+        ]
     )
 
     story = openai_response.choices[0].text.strip()
